@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,11 +11,20 @@
 		2E1507C71FAAC31A6FF4CEA3 /* Pods_iOS_101_day5Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D262151261460D194F6D1280 /* Pods_iOS_101_day5Tests.framework */; };
 		9A9271EE2461918C003BB180 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9271ED2461918C003BB180 /* AppDelegate.swift */; };
 		9A9271F02461918C003BB180 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9271EF2461918C003BB180 /* SceneDelegate.swift */; };
-		9A9271F22461918C003BB180 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9271F12461918C003BB180 /* ViewController.swift */; };
 		9A9271F52461918C003BB180 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9271F32461918C003BB180 /* Main.storyboard */; };
 		9A9271F72461918E003BB180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9271F62461918E003BB180 /* Assets.xcassets */; };
 		9A9271FA2461918E003BB180 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9271F82461918E003BB180 /* LaunchScreen.storyboard */; };
 		9A9272052461918E003BB180 /* iOS_101_day5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9272042461918E003BB180 /* iOS_101_day5Tests.swift */; };
+		9A92721124619907003BB180 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92721024619907003BB180 /* HomeViewController.swift */; };
+		9A92721324619928003BB180 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92721224619928003BB180 /* HomeViewModel.swift */; };
+		9A92721524619931003BB180 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92721424619931003BB180 /* HomeModel.swift */; };
+		9A92721824619984003BB180 /* HomeTotalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92721724619984003BB180 /* HomeTotalCell.swift */; };
+		9A92721A246199BC003BB180 /* HomeBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A927219246199BC003BB180 /* HomeBookCell.swift */; };
+		9A92721D24619BE7003BB180 /* SearchBooksApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92721C24619BE7003BB180 /* SearchBooksApi.swift */; };
+		9A92721F24619E72003BB180 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92721E24619E72003BB180 /* Api.swift */; };
+		9A9272222461BF97003BB180 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9272212461BF97003BB180 /* HomeViewModelTests.swift */; };
+		9A9272252461C068003BB180 /* HomeViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9272242461C068003BB180 /* HomeViewControllerMock.swift */; };
+		9A9272272461C078003BB180 /* SearchBooksApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9272262461C078003BB180 /* SearchBooksApiMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +45,6 @@
 		9A9271EA2461918C003BB180 /* iOS-101-day5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-101-day5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9271ED2461918C003BB180 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A9271EF2461918C003BB180 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9A9271F12461918C003BB180 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9A9271F42461918C003BB180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A9271F62461918E003BB180 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A9271F92461918E003BB180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +52,16 @@
 		9A9272002461918E003BB180 /* iOS-101-day5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-101-day5Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9272042461918E003BB180 /* iOS_101_day5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_101_day5Tests.swift; sourceTree = "<group>"; };
 		9A9272062461918E003BB180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A92721024619907003BB180 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9A92721224619928003BB180 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		9A92721424619931003BB180 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		9A92721724619984003BB180 /* HomeTotalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTotalCell.swift; sourceTree = "<group>"; };
+		9A927219246199BC003BB180 /* HomeBookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBookCell.swift; sourceTree = "<group>"; };
+		9A92721C24619BE7003BB180 /* SearchBooksApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksApi.swift; sourceTree = "<group>"; };
+		9A92721E24619E72003BB180 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		9A9272212461BF97003BB180 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		9A9272242461C068003BB180 /* HomeViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerMock.swift; sourceTree = "<group>"; };
+		9A9272262461C078003BB180 /* SearchBooksApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksApiMock.swift; sourceTree = "<group>"; };
 		D262151261460D194F6D1280 /* Pods_iOS_101_day5Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_101_day5Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6E0EFD55DF3666C2BF6E5E1 /* Pods-iOS-101-day5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-101-day5.release.xcconfig"; path = "Target Support Files/Pods-iOS-101-day5/Pods-iOS-101-day5.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,7 +103,6 @@
 				09CA2BD40D5F399986F1D8E7 /* Pods-iOS-101-day5Tests.debug.xcconfig */,
 				8FA0CAA2DDA61DF668321EFF /* Pods-iOS-101-day5Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -114,7 +131,8 @@
 			children = (
 				9A9271ED2461918C003BB180 /* AppDelegate.swift */,
 				9A9271EF2461918C003BB180 /* SceneDelegate.swift */,
-				9A9271F12461918C003BB180 /* ViewController.swift */,
+				9A92721B24619BB6003BB180 /* Api */,
+				9A92720F246198E6003BB180 /* Home */,
 				9A9271F32461918C003BB180 /* Main.storyboard */,
 				9A9271F62461918E003BB180 /* Assets.xcassets */,
 				9A9271F82461918E003BB180 /* LaunchScreen.storyboard */,
@@ -127,9 +145,57 @@
 			isa = PBXGroup;
 			children = (
 				9A9272042461918E003BB180 /* iOS_101_day5Tests.swift */,
+				9A9272202461BF1D003BB180 /* Home */,
 				9A9272062461918E003BB180 /* Info.plist */,
 			);
 			path = "iOS-101-day5Tests";
+			sourceTree = "<group>";
+		};
+		9A92720F246198E6003BB180 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9A92721024619907003BB180 /* HomeViewController.swift */,
+				9A92721224619928003BB180 /* HomeViewModel.swift */,
+				9A92721424619931003BB180 /* HomeModel.swift */,
+				9A92721624619953003BB180 /* Cell */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9A92721624619953003BB180 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9A92721724619984003BB180 /* HomeTotalCell.swift */,
+				9A927219246199BC003BB180 /* HomeBookCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9A92721B24619BB6003BB180 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				9A92721E24619E72003BB180 /* Api.swift */,
+				9A92721C24619BE7003BB180 /* SearchBooksApi.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		9A9272202461BF1D003BB180 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9A9272212461BF97003BB180 /* HomeViewModelTests.swift */,
+				9A9272232461C033003BB180 /* Mock */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9A9272232461C033003BB180 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				9A9272242461C068003BB180 /* HomeViewControllerMock.swift */,
+				9A9272262461C078003BB180 /* SearchBooksApiMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,9 +384,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A9271F22461918C003BB180 /* ViewController.swift in Sources */,
+				9A92721F24619E72003BB180 /* Api.swift in Sources */,
 				9A9271EE2461918C003BB180 /* AppDelegate.swift in Sources */,
+				9A92721824619984003BB180 /* HomeTotalCell.swift in Sources */,
 				9A9271F02461918C003BB180 /* SceneDelegate.swift in Sources */,
+				9A92721124619907003BB180 /* HomeViewController.swift in Sources */,
+				9A92721524619931003BB180 /* HomeModel.swift in Sources */,
+				9A92721A246199BC003BB180 /* HomeBookCell.swift in Sources */,
+				9A92721D24619BE7003BB180 /* SearchBooksApi.swift in Sources */,
+				9A92721324619928003BB180 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +401,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A9272052461918E003BB180 /* iOS_101_day5Tests.swift in Sources */,
+				9A9272222461BF97003BB180 /* HomeViewModelTests.swift in Sources */,
+				9A9272252461C068003BB180 /* HomeViewControllerMock.swift in Sources */,
+				9A9272272461C078003BB180 /* SearchBooksApiMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
