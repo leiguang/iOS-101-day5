@@ -16,11 +16,14 @@ class HomeViewModelTests: QuickSpec {
     
     var viewModel: HomeViewModel!
     var viewController: HomeViewControllerMock!
+    var api: SearchBooksApiMock!
     
     override func spec() {
         beforeEach {
             self.viewController = HomeViewControllerMock()
             self.viewModel = HomeViewModel(viewController: self.viewController)
+            self.api = SearchBooksApiMock()
+            self.viewModel.api = self.api
         }
         
         
@@ -37,9 +40,7 @@ class HomeViewModelTests: QuickSpec {
                         )
                     ]
                 )
-                let apiMock = SearchBooksApiMock()
-                apiMock.searchBooksResult = .success(responseMock)
-                self.viewModel.api = apiMock
+                self.api.searchBooksResult = .success(responseMock)
                 
                 self.viewModel.loadData()
                 
@@ -50,13 +51,12 @@ class HomeViewModelTests: QuickSpec {
             
             it("should do nothing when data load fails") {
                 let responseMock = ApiError(message: "this is a error message.")
-                let apiMock = SearchBooksApiMock()
-                apiMock.searchBooksResult = .failure(responseMock)
-                self.viewModel.api = apiMock
+                self.api.searchBooksResult = .failure(responseMock)
                 
                 self.viewModel.loadData()
                 
                 expect(self.viewModel.cellModels).to(beEmpty())
+                expect(self.viewController.didStopPullToRefresh).to(beTrue())
                 expect(self.viewController.didShowAlert).to(beTrue())
             }
         }

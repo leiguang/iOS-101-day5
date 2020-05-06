@@ -31,6 +31,7 @@ class HomeViewModel: HomeViewModelProtocol {
     func loadData() {
         api.searchBooks(q: query, start: start, count: pageSize) { [weak self] (result) in
             guard let self = self else { return }
+            self.viewController.stopPullToRefresh()
             
             switch result {
             case .success(let response):
@@ -47,7 +48,6 @@ class HomeViewModel: HomeViewModelProtocol {
                 self.cellModels = [totalCellModel] + bookCellModels
                 
                 self.viewController.reloadTableView()
-                self.viewController.stopPullToRefresh()
                 
             case .failure(let error):
                 self.viewController.showAlert(message: error.message)
